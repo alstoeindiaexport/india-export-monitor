@@ -1,0 +1,665 @@
+[
+ {
+  "month": "April 2025",
+  "key": "2025-04",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/may/doc2025515556001.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 3691.81,
+    "previous": 2646.21,
+    "growth": 39.51
+   },
+   "Engineering Goods": {
+    "value": 9511.46,
+    "previous": 8547.61,
+    "growth": 11.28
+   },
+   "Petroleum Products": {
+    "value": 7374.5,
+    "previous": 7045.12,
+    "growth": 4.68
+   },
+   "Marine Products": {
+    "value": 582.19,
+    "previous": 494.19,
+    "growth": 17.81
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2486,
+    "previous": 2428.39,
+    "growth": 2.37
+   },
+   "GRAND TOTAL": {
+    "value": 38487.74,
+    "previous": 35303.6,
+    "growth": 9.02
+   }
+  },
+  "officialDrivers": "Electronic Goods, Engineering Goods, Gems & Jewellery, RMG of all Textiles, Rice, Marine Products and Drugs & Pharmaceuticals",
+  "release": "https://www.commerce.gov.in/files/d-m-y/PIB%20Release%20April%202025%20final%20revised.pdf"
+ },
+ {
+  "month": "May 2025",
+  "key": "2025-05",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/jun/doc2025616571201.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 4569.47,
+    "previous": 2965.33,
+    "growth": 54.1
+   },
+   "Engineering Goods": {
+    "value": 9887.01,
+    "previous": 9968.45,
+    "growth": -0.82
+   },
+   "Petroleum Products": {
+    "value": 5643.8,
+    "previous": 8099.21,
+    "growth": -30.32
+   },
+   "Marine Products": {
+    "value": 730.15,
+    "previous": 575.85,
+    "growth": 26.79
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2475.7,
+    "previous": 2305.61,
+    "growth": 7.38
+   },
+   "GRAND TOTAL": {
+    "value": 38730.16,
+    "previous": 39591.25,
+    "growth": -2.17
+   }
+  },
+  "officialDrivers": "Electronic Goods, Organic & Inorganic Chemicals, Drugs & Pharmaceuticals, Marine Products and RMG of all Textiles",
+  "release": "https://www.pib.gov.in/PressReleseDetail.aspx?PRID=2136680"
+ },
+ {
+  "month": "June 2025",
+  "key": "2025-06",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/jul/doc2025715587101.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 4146.79,
+    "previous": 2822.36,
+    "growth": 46.93
+   },
+   "Engineering Goods": {
+    "value": 9504.54,
+    "previous": 9377.98,
+    "growth": 1.35
+   },
+   "Petroleum Products": {
+    "value": 4615.75,
+    "previous": 5489.44,
+    "growth": -15.92
+   },
+   "Marine Products": {
+    "value": 633.3,
+    "previous": 558.83,
+    "growth": 13.33
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2615.67,
+    "previous": 2468.88,
+    "growth": 5.95
+   },
+   "GRAND TOTAL": {
+    "value": 35144.3,
+    "previous": 35162.57,
+    "growth": -0.05
+   }
+  },
+  "officialDrivers": "Electronic Goods, Drugs & Pharmaceuticals, Engineering Goods, Marine Products and Meat, dairy & poultry products",
+  "release": "https://www.commerce.gov.in/files/d-m-y/PIB%20Release%20June%202025.pdf"
+ },
+ {
+  "month": "July 2025",
+  "key": "2025-07",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/aug/doc2025814608701.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 3765.29,
+    "previous": 2812.24,
+    "growth": 33.89
+   },
+   "Engineering Goods": {
+    "value": 10427.22,
+    "previous": 9166.73,
+    "growth": 13.75
+   },
+   "Petroleum Products": {
+    "value": 4341.27,
+    "previous": 5791.93,
+    "growth": -25.05
+   },
+   "Marine Products": {
+    "value": 652.18,
+    "previous": 571.98,
+    "growth": 14.02
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2662.24,
+    "previous": 2334.14,
+    "growth": 14.06
+   },
+   "GRAND TOTAL": {
+    "value": 37237.78,
+    "previous": 34707.19,
+    "growth": 7.29
+   }
+  },
+  "officialDrivers": "Engineering Goods, Electronic Goods, Gems & Jewellery, Drugs & Pharmaceuticals and Organic & Inorganic Chemicals",
+  "release": "https://www.commerce.gov.in/files/d-m-y/PIB2156504.pdf"
+ },
+ {
+  "month": "August 2025",
+  "key": "2025-08",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/sep/doc2025915637401.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 2926.34,
+    "previous": 2323.76,
+    "growth": 25.93
+   },
+   "Engineering Goods": {
+    "value": 9900.9,
+    "previous": 9437.14,
+    "growth": 4.91
+   },
+   "Petroleum Products": {
+    "value": 4479.67,
+    "previous": 4204.86,
+    "growth": 6.54
+   },
+   "Marine Products": {
+    "value": 595.74,
+    "previous": 552.27,
+    "growth": 7.87
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2510.13,
+    "previous": 2347.26,
+    "growth": 6.94
+   },
+   "GRAND TOTAL": {
+    "value": 35104.18,
+    "previous": 32890.09,
+    "growth": 6.73
+   }
+  },
+  "officialDrivers": "Electronic Goods, Engineering Goods, Gems & Jewellery, Petroleum Products and Drugs & Pharmaceuticals",
+  "release": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2166813&reg=48&lang=2"
+ },
+ {
+  "month": "September 2025",
+  "key": "2025-09",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/oct/doc20251015668001.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 3115.75,
+    "previous": 2069.68,
+    "growth": 50.54
+   },
+   "Engineering Goods": {
+    "value": 10114.57,
+    "previous": 9826.24,
+    "growth": 2.93
+   },
+   "Petroleum Products": {
+    "value": 4956.74,
+    "previous": 4301.9,
+    "growth": 15.22
+   },
+   "Marine Products": {
+    "value": 781.02,
+    "previous": 632.7,
+    "growth": 23.44
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2620.76,
+    "previous": 2555.29,
+    "growth": 2.56
+   },
+   "GRAND TOTAL": {
+    "value": 36384.01,
+    "previous": 34079.18,
+    "growth": 6.76
+   }
+  },
+  "officialDrivers": "Electronic Goods, Petroleum Products, Engineering Goods, Rice, Marine Products and Drugs & Pharmaceuticals",
+  "release": "https://www.commerce.gov.in/files/d-m-y/PIB-Release-September-2025.pdf"
+ },
+ {
+  "month": "October 2025",
+  "key": "2025-10",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251117696801.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 4083.28,
+    "previous": 3429.84,
+    "growth": 19.05
+   },
+   "Engineering Goods": {
+    "value": 9372.67,
+    "previous": 11253.08,
+    "growth": -16.71
+   },
+   "Petroleum Products": {
+    "value": 3949.49,
+    "previous": 4413.36,
+    "growth": -10.51
+   },
+   "Marine Products": {
+    "value": 899.12,
+    "previous": 809.44,
+    "growth": 11.08
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2488.9,
+    "previous": 2624.14,
+    "growth": -5.15
+   },
+   "GRAND TOTAL": {
+    "value": 34375.16,
+    "previous": 38983.08,
+    "growth": -11.82
+   }
+  },
+  "officialDrivers": "Electronic Goods, Meat, dairy & poultry products, Marine Products, Cashew and Coffee",
+  "release": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2190829"
+ },
+ {
+  "month": "November 2025",
+  "key": "2025-11",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/dec/doc20251215732101.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 4813.66,
+    "previous": 3464.13,
+    "growth": 38.96
+   },
+   "Engineering Goods": {
+    "value": 11012.2,
+    "previous": 8897.84,
+    "growth": 23.76
+   },
+   "Petroleum Products": {
+    "value": 3931.52,
+    "previous": 3521.28,
+    "growth": 11.65
+   },
+   "Marine Products": {
+    "value": 877.65,
+    "previous": 759.59,
+    "growth": 15.54
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2606.79,
+    "previous": 2156.06,
+    "growth": 20.91
+   },
+   "GRAND TOTAL": {
+    "value": 38130.19,
+    "previous": 31942.52,
+    "growth": 19.37
+   }
+  },
+  "officialDrivers": "Engineering Goods, Electronic Goods, Gems & Jewellery, Drugs & Pharmaceuticals and Petroleum Products",
+  "release": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2204071&reg=3&lang=2"
+ },
+ {
+  "month": "December 2025",
+  "key": "2025-12",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jan/doc2026115758201.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 4174.88,
+    "previous": 3574.87,
+    "growth": 16.78
+   },
+   "Engineering Goods": {
+    "value": 10981.94,
+    "previous": 10843.35,
+    "growth": 1.28
+   },
+   "Petroleum Products": {
+    "value": 4403.37,
+    "previous": 4709.17,
+    "growth": -6.49
+   },
+   "Marine Products": {
+    "value": 808.72,
+    "previous": 723.8,
+    "growth": 11.73
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2633.63,
+    "previous": 2492.71,
+    "growth": 5.65
+   },
+   "GRAND TOTAL": {
+    "value": 38509,
+    "previous": 37804.05,
+    "growth": 1.86
+   }
+  },
+  "officialDrivers": "Electronic Goods, Meat, dairy & poultry products, Drugs & Pharmaceuticals, Engineering Goods and Marine Products",
+  "release": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2214961&reg=3&lang=1"
+ },
+ {
+  "month": "January 2026",
+  "key": "2026-01",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/feb/doc2026216793101.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 4111.56,
+    "previous": 4098.5,
+    "growth": 0.32
+   },
+   "Engineering Goods": {
+    "value": 10401.8,
+    "previous": 9424.17,
+    "growth": 10.37
+   },
+   "Petroleum Products": {
+    "value": 3774.8,
+    "previous": 3477.56,
+    "growth": 8.55
+   },
+   "Marine Products": {
+    "value": 612.65,
+    "previous": 540.79,
+    "growth": 13.29
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2615.29,
+    "previous": 2590.52,
+    "growth": 0.96
+   },
+   "GRAND TOTAL": {
+    "value": 36558.89,
+    "previous": 36338.51,
+    "growth": 0.61
+   }
+  },
+  "officialDrivers": "Engineering Goods, Petroleum Products, Meat, Dairy & Poultry Products, Marine Products and Iron Ore",
+  "release": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2228785&reg=3&lang=1"
+ },
+ {
+  "month": "February 2026",
+  "key": "2026-02",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/mar/doc2026316826201.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 4183.68,
+    "previous": 3790.65,
+    "growth": 10.37
+   },
+   "Engineering Goods": {
+    "value": 10358.7,
+    "previous": 9174.86,
+    "growth": 12.9
+   },
+   "Petroleum Products": {
+    "value": 3426.38,
+    "previous": 5718.79,
+    "growth": -40.09
+   },
+   "Marine Products": {
+    "value": 578.13,
+    "previous": 510.4,
+    "growth": 13.27
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2558.43,
+    "previous": 2474.31,
+    "growth": 3.4
+   },
+   "GRAND TOTAL": {
+    "value": 36609.29,
+    "previous": 36910.92,
+    "growth": -0.82
+   }
+  },
+  "officialDrivers": "Engineering Goods, Electronic Goods, Organic & Inorganic Chemicals, Gems & Jewellery and Meat, Dairy & Poultry Products",
+  "release": "https://www.commerce.gov.in/files/2026-03/PIB%20Release.pdf"
+ },
+ {
+  "month": "March 2026",
+  "key": "2026-03",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/apr/doc2026415848001.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 4408.91,
+    "previous": 4558.29,
+    "growth": -3.28
+   },
+   "Engineering Goods": {
+    "value": 10939.88,
+    "previous": 10817.86,
+    "growth": 1.13
+   },
+   "Petroleum Products": {
+    "value": 5182.95,
+    "previous": 4895.2,
+    "growth": 5.88
+   },
+   "Marine Products": {
+    "value": 680.31,
+    "previous": 675.17,
+    "growth": 0.76
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2828.6,
+    "previous": 3681.66,
+    "growth": -23.17
+   },
+   "GRAND TOTAL": {
+    "value": 38918.34,
+    "previous": 42047.6,
+    "growth": -7.44
+   }
+  },
+  "officialDrivers": "Petroleum Products, Engineering Goods, Mica, Coal & Other Ores, Minerals including processed minerals, Other cereals and Handicrafts excl. hand made carpet",
+  "release": "https://www.commerce.gov.in/files/d-m-y/Press.pdf"
+ },
+ {
+  "month": "April 2026",
+  "key": "2026-04",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/may/doc2026515870601.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 5177.51,
+    "previous": 3690.03,
+    "growth": 40.31
+   },
+   "Engineering Goods": {
+    "value": 10349.72,
+    "previous": 9515.77,
+    "growth": 8.76
+   },
+   "Petroleum Products": {
+    "value": 9593.42,
+    "previous": 7124.03,
+    "growth": 34.66
+   },
+   "Marine Products": {
+    "value": 668.05,
+    "previous": 582.25,
+    "growth": 14.74
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2663.19,
+    "previous": 2486.19,
+    "growth": 7.12
+   },
+   "GRAND TOTAL": {
+    "value": 43559.61,
+    "previous": 38283.77,
+    "growth": 13.78
+   }
+  },
+  "officialDrivers": "Petroleum Products, Electronic Goods, Engineering Goods, Meat, Dairy & Poultry Products and Drugs & Pharmaceuticals",
+  "release": "https://www.commerce.gov.in/files/2026-05/PIB%20Release%20April%202026.pdf"
+ },
+ {
+  "month": "May 2026",
+  "key": "2026-05",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jun/doc2026615893501.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 5097.48,
+    "previous": 4566.84,
+    "growth": 11.62
+   },
+   "Engineering Goods": {
+    "value": 12311.33,
+    "previous": 9890.48,
+    "growth": 24.48
+   },
+   "Petroleum Products": {
+    "value": 8421.01,
+    "previous": 5436.79,
+    "growth": 54.89
+   },
+   "Marine Products": {
+    "value": 727.95,
+    "previous": 730.15,
+    "growth": -0.3
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2628.29,
+    "previous": 2476.46,
+    "growth": 6.13
+   },
+   "GRAND TOTAL": {
+    "value": 45196.55,
+    "previous": 38303.59,
+    "growth": 18
+   }
+  },
+  "officialDrivers": "Petroleum Products, Engineering Goods, Organic & Inorganic Chemicals, Electronic Goods, and Gems & Jewellery",
+  "release": "https://www.commerce.gov.in/files/2026-06/PIB%20Release%20-%20May%202026_0.pdf"
+ },
+ {
+  "month": "June 2026",
+  "key": "2026-06",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jul/doc2026713919201.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 4926.93,
+    "previous": 4142.82,
+    "growth": 18.93
+   },
+   "Engineering Goods": {
+    "value": 11478.69,
+    "previous": 9506.75,
+    "growth": 20.74
+   },
+   "Petroleum Products": {
+    "value": 4874.48,
+    "previous": 4464.19,
+    "growth": 9.19
+   },
+   "Marine Products": {
+    "value": 725.02,
+    "previous": 633.3,
+    "growth": 14.48
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2808.57,
+    "previous": 2621.72,
+    "growth": 7.13
+   },
+   "GRAND TOTAL": {
+    "value": 40413.69,
+    "previous": 34978.85,
+    "growth": 15.54
+   }
+  },
+  "officialDrivers": "Gems & Jewellery, Engineering Goods, Organic & Inorganic Chemicals, Electronic Goods, and Rice",
+  "release": "https://www.commerce.gov.in/files/d-m-y/PIB%20Release%20-%20June%202026%20_0.pdf"
+ },
+ {
+  "month": "July 2026",
+  "key": "2026-07",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/aug/doc2026813954301.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 5916.45,
+    "previous": 3758.96,
+    "growth": 57.4
+   },
+   "Engineering Goods": {
+    "value": 12242.18,
+    "previous": 10399.95,
+    "growth": 17.71
+   },
+   "Petroleum Products": {
+    "value": 6919.78,
+    "previous": 4127.77,
+    "growth": 67.64
+   },
+   "Marine Products": {
+    "value": 768.8,
+    "previous": 652.49,
+    "growth": 17.83
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2686.12,
+    "previous": 2666.52,
+    "growth": 0.74
+   },
+   "GRAND TOTAL": {
+    "value": 44243.45,
+    "previous": 36984.52,
+    "growth": 19.63
+   }
+  },
+  "officialDrivers": "Petroleum Products, Electronic Goods, Engineering Goods, Organic & Inorganic Chemicals, and Cotton Yarn/Fabs./made-ups, Handloom Products etc",
+  "release": "https://www.commerce.gov.in/files/d-m-y/PIB%20Release%20-%20July%202026.pdf"
+ },
+ {
+  "month": "August 2026",
+  "key": "2026-08",
+  "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/sep/doc_9876_20260915_19512001.pdf",
+  "sectors": {
+   "Electronic Goods": {
+    "value": 5553.09,
+    "previous": 2925.52,
+    "growth": 89.82
+   },
+   "Engineering Goods": {
+    "value": 12319.81,
+    "previous": 9867.17,
+    "growth": 24.86
+   },
+   "Petroleum Products": {
+    "value": 6807.86,
+    "previous": 4169.7,
+    "growth": 63.27
+   },
+   "Marine Products": {
+    "value": 761.1,
+    "previous": 595.74,
+    "growth": 27.76
+   },
+   "Drugs & Pharmaceuticals": {
+    "value": 2606.95,
+    "previous": 2510.63,
+    "growth": 3.84
+   },
+   "GRAND TOTAL": {
+    "value": 43810.92,
+    "previous": 34736.67,
+    "growth": 26.12
+   }
+  },
+  "officialDrivers": "Electronic Goods, Petroleum Products, Engineering Goods, Organic & Inorganic Chemicals, Cotton Yarn/Fabs./made-ups, and Handloom Products etc",
+  "release": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2310636"
+ }
+]
