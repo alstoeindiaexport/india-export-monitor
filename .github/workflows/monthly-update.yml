@@ -1,0 +1,57 @@
+name: Monthly export data update
+
+on:
+  schedule:
+    # 04:30 UTC is 10:00 IST. Runs every day from the 14th to the 28th; once the new month is in,
+    # the remaining runs that month find nothing new and finish in seconds.
+    - cron: "30 4 14-28 * *"
+  workflow_dispatch:
+    inputs:
+      verify:
+        description: "Optional: re-check a month already in data.json against its official PDF (YYYY-MM). Leave empty to add new months."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monthly-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Check the stored data
+        run: python tools/update_month.py --check
+
+      - name: Add newly published months
+        env:
+          VERIFY_MONTH: ${{ github.event.inputs.verify }}
+          COMMIT_MSG_FILE: ${{ runner.temp }}/commit_message.txt
+        run: python tools/auto_update.py
+
+      - name: Commit and push
+        env:
+          COMMIT_MSG_FILE: ${{ runner.temp }}/commit_message.txt
+        run: |
+          if git diff --quiet -- data.json; then
+            echo "No new data to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git commit -m "$(cat "$COMMIT_MSG_FILE")"
+          git push
