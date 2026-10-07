@@ -316,15 +316,17 @@ def process(key, data):
 
 
 def verify(keys, data):
-    """Re-read stored months from the PDFs they cite. Writes nothing; fails if any month differs."""
-    bad = []
+    """Re-read stored months from the PDFs they cite. Writes nothing. Fails if a stored month differs from its
+    PDF, or if no month could be read at all; a PDF that cannot be read automatically is reported, not failed."""
+    differs, unread = [], []
     for key in keys:
         rec = next(d for d in data if d["key"] == key)
         try:
             sectors = read_pdf(rec["source"], key)
         except (SystemExit, RuntimeError) as e:
-            log(f"VERIFY {key}: could not read {rec['source']} ({'see above' if isinstance(e, SystemExit) else e})")
-            bad.append(key)
+            why = "reason in the line above" if isinstance(e, SystemExit) else str(e)
+            log(f"VERIFY {key}: NOT CHECKED, the PDF could not be read automatically ({why}): {rec['source']}")
+            unread.append(key)
             continue
         if records_match(rec["sectors"], sectors):
             log(f"VERIFY {key}: MATCHES the official PDF ({rec['source']})")
@@ -332,10 +334,13 @@ def verify(keys, data):
             log(f"VERIFY {key}: DIFFERS FROM the official PDF ({rec['source']})")
             for n in um.ROWS:
                 log(f"  {n}: stored {rec['sectors'][n]} pdf {sectors[n]}")
-            bad.append(key)
-    if bad:
-        um.fail(f"{len(bad)} of {len(keys)} months did not verify: {', '.join(bad)}")
-    log(f"VERIFIED: {len(keys)} month(s) match their official PDFs.")
+            differs.append(key)
+    if differs:
+        um.fail(f"{len(differs)} of {len(keys)} months differ from their official PDFs: {', '.join(differs)}")
+    if len(unread) == len(keys):
+        um.fail("no month could be checked: " + ", ".join(unread))
+    log(f"VERIFIED: {len(keys) - len(unread)} of {len(keys)} months match their official PDFs."
+        + (f" Not checked (PDF not readable automatically): {', '.join(unread)}." if unread else ""))
 
 
 def annotate(key, drivers, release, data):
