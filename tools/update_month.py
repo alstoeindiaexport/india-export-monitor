@@ -134,17 +134,27 @@ def parse_figures(path, key):
     return finish_rows(out)
 
 
+def page_head(t):
+    return re.sub(r"[\s\-]+", " ", t[:600]).upper().replace(" :", ":").replace(": ", ":")
+
+
 def parse_quick(raw, key):
     year, mon = key.split("-")
     mname = MONTHS[int(mon) - 1]
-    page = None
-    for t in pdf_pages(raw):
-        head = re.sub(r"[\s\-]+", " ", t[:600]).upper().replace(" :", ":").replace(": ", ":")
-        if f"MAJOR COMMODITIES FOR {mname} {year}" in head and "TRADE:EXPORT" in head and "MILLION USD" in head:
-            page = t
-            break
-    if page is None:
+    pages = pdf_pages(raw)
+
+    def our_table(h):
+        return f"MAJOR COMMODITIES FOR {mname} {year}" in h and "TRADE:EXPORT" in h and "MILLION USD" in h
+    start = next((i for i, t in enumerate(pages) if our_table(page_head(t))), None)
+    if start is None:
         fail(f"no 'QUICK ESTIMATES ... FOR {mname} {year} / TRADE: EXPORT / Million USD' table found in the PDF")
+    # The table can run onto the next pages. It ends at its notes, or where a different table starts.
+    page = pages[start]
+    for t in pages[start + 1:]:
+        h = page_head(t)
+        if "Note 1:" in page or (("QUICK ESTIMATES" in h or "TRADE:" in h) and not our_table(h)):
+            break
+        page += "\n" + t
     page = page.split("Note 1:")[0]
     out = {}
     for name in ROWS:
@@ -153,9 +163,15 @@ def parse_quick(raw, key):
         if not m:
             fail(f"row '{name}' not found")
         n = 3 if mname == "APRIL" else 6
-        nums = [float(x) for x in re.findall(r"-?\d+(?:\.\d+)?", page[m.end():])[:n]]
-        if len(nums) < n:
-            fail(f"row '{name}' has too few numbers: {nums}")
+        tokens = re.findall(r"-?\d+(?:\.\d+)?", page[m.end():])[:n]
+        if len(tokens) < n:
+            fail(f"row '{name}' has too few numbers: {tokens}")
+        # Every figure in these tables has two decimals. Fewer means a cell wrapped onto the next line and
+        # the number was cut, which the growth checks alone might not catch.
+        if not all(re.fullmatch(r"-?\d+\.\d\d", x) for x in tokens):
+            fail(f"row '{name}': numbers look cut off ({' '.join(tokens)}); the table cells wrap in this PDF, "
+                 "so add this month with --figures instead")
+        nums = [float(x) for x in tokens]
         prev, value, growth = (nums[0], nums[1], nums[2]) if n == 3 else (nums[0], nums[2], nums[4])
         check_row(name, prev, value, growth)
         if n == 6:
