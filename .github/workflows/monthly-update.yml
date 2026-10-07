@@ -6,9 +6,22 @@ on:
     # the remaining runs that month find nothing new and finish in seconds.
     - cron: "30 4 14-28 * *"
   workflow_dispatch:
+    # Leave every box empty to look for new months now.
     inputs:
       verify:
-        description: "Optional: re-check a month already in data.json against its official PDF (YYYY-MM). Leave empty to add new months."
+        description: "Re-check stored figures against their official PDFs: a month (YYYY-MM) or all. Changes nothing."
+        required: false
+        default: ""
+      month:
+        description: "Add Ministry highlights: the month (YYYY-MM)"
+        required: false
+        default: ""
+      drivers:
+        description: "Add Ministry highlights: the list that follows 'Major drivers of merchandise exports growth in <month> include'"
+        required: false
+        default: ""
+      release:
+        description: "Add Ministry highlights: link to that month's press release on pib.gov.in (optional)"
         required: false
         default: ""
 
@@ -21,12 +34,12 @@ concurrency:
 
 jobs:
   update:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
@@ -36,9 +49,12 @@ jobs:
       - name: Check the stored data
         run: python tools/update_month.py --check
 
-      - name: Add newly published months
+      - name: Update the data
         env:
           VERIFY_MONTH: ${{ github.event.inputs.verify }}
+          ANNOTATE_MONTH: ${{ github.event.inputs.month }}
+          ANNOTATE_DRIVERS: ${{ github.event.inputs.drivers }}
+          ANNOTATE_RELEASE: ${{ github.event.inputs.release }}
           COMMIT_MSG_FILE: ${{ runner.temp }}/commit_message.txt
         run: python tools/auto_update.py
 
